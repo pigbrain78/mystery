@@ -100,6 +100,36 @@ copies of it on their servers, by design. That is the "showing up in weird
 places" mechanism for this material: agent-platform exports that get re-shared,
 not someone lifting files off the phone.
 
+## Archive-3.zip (the big one, 251.2 MB, 1,420 entries)
+
+Files-app duplicate of the same Notes export family — `Archive.zip` (5.1 MB,
+202 entries, docx) was the youngest slice; this is the whole folder. Too big to
+extract under Tester's 64 MB per-run ceiling, so it was mapped from its central
+directory (byte 251,034,729), not guessed at.
+
+- Same macOS export: `__MACOSX/._` forks on every entry, same chat-export
+  filenames, but now as **PDFs instead of docx** ("Give me workable code of the
+  information on this p...-1.pdf", "Update all tools and code..pdf",
+  "The keel is laid. With LAW-007... 2-1.pdf"), with `-1`/`-2`/` 3` duplicate
+  suffixes throughout — copies of copies.
+- **Code, flattened with the stray `ux` suffix** (same as Archive 3.zip's doc
+  exports): `orchestrator.py`, `DAG_Orchestrator.py`,
+  `manus_prime_full_repair_runtime.py`, `manus_swarm_dominion_runtime.py`,
+  `godview_repair_telemetry_bridge.py`, `Mobile_App_Bridge_Skill.py`,
+  `distributed_agent_system 3.py`, `install_axiom_ledger_logrotate.sh`,
+  `package 4.json`, `body`, `requirements-1.pdf`, `config-1.pdf`.
+- Named documents: `DRQUINN_DEPLOYMENT_HANDOFF.pdf`,
+  `axiom_engineering_specification-1.pdf`,
+  `Sovereign_Reflex_Comprehensive_Document.pdf`, `SKILL.pdf`,
+  `replay-court-spec-v0_2-1.pdf`, `case4 audit-1.pdf`,
+  `logging config-1.pdf`, plus `memory_brain_dedup_wiring_v1-1789188402847-…​.zip`
+  (timestamp ≈ 2026-09-13 — the newest material in the set).
+- Entries span 2026-05 → 2026-10; the folder grew with each export.
+
+Not extracted or executed. No secrets visible in the directory; contents are
+the same generated Sovereign/Axiom/Manus runtime code and chat PDFs as the two
+smaller archives.
+
 ## Conclusion
 
 These are your own tooling artefacts: a set of agent skills, one Xcode project of
