@@ -130,6 +130,52 @@ Not extracted or executed. No secrets visible in the directory; contents are
 the same generated Sovereign/Axiom/Manus runtime code and chat PDFs as the two
 smaller archives.
 
+## Archive-1, Archive-2 and the memory_brain zip (second batch)
+
+**Archive-1.zip (392.6 MB)** — one tree: `Lost in translation-4/` (plus a few
+entries from `Lost in translation-3/`). Same export family, but the
+`drquinn_os/` code inside has **exploded into numbered duplicates**: the same
+modules regenerated hundreds of times — `orchestrator-89/-1598/-2893/-2976.py`,
+`cost_auditor-1/-123/-2492/-2575/-4610/-3232/-3315.py`,
+`dna_patch_generator-4822/-4639/-2153/-3086.py`,
+`anomaly_forecaster-5494/-4759/-3796/-2195.py`, `ledger_parser-…`,
+`patch_audit_trail-867.py`, `test_e2e-390.py` — plus chat PDFs
+("Z Z This is strong… 2-22.pdf", "3-17.pdf"). The 4-digit suffixes are
+version numbers from an agent platform regenerating each file on every run;
+the platform, not the phone, is the system of record. Mapped from the central
+directory at byte 392,557,104; not extracted (over the 64 MB run ceiling).
+
+**Archive-2.zip (364.0 MB)** — not a sibling at all: **one single entry,
+`Archive-1.zip`**. A re-zip of Archive-1 (the compressed copy is 122,921 bytes
+smaller than the original — zip-of-zip overhead, no new content).
+
+**The 464 KB `Archive.zip` shared in the same batch** — a complete, self-contained
+**Pocket OS 1.0.0 bundle**, the newest artefact of the set (2026-09-07/19),
+extracted in full to `extracted/memorybrain/`:
+
+- `memory_brain/` Python package, 24 modules (ingest, dedup, contradiction,
+  council, governance, ledger, provenance, vector…) — a much newer, larger
+  sibling of the `memory-second-brain.skill` from the earlier batch (3 modules;
+  `core.py` has since changed).
+- A FastAPI web control room (`scripts/pocketos_demo/`) and an **iOS app**:
+  `PocketOSKit` SwiftPM library with tests + captured fixtures, and a SwiftUI
+  cockpit (`ios/PocketOSApp/`).
+- `CHECKPOINT_STAMP.txt`: `git_head 5f500db2…`, hash-chained ledger 25 records
+  "VERIFIED INTACT", checkpoint 2026-09-19.
+- `RELEASE_NOTES.md` says the Swift cockpit was authored in a **cloud sandbox
+  that "cannot compile iOS UI"** — same agent-platform origin as the other
+  exports.
+- Secret scan across all 105 extracted files: **zero hits**. The `__init__.py`
+  difference against the skill copy is just packaging, no content leak.
+
+### Picture across all five archives
+
+Every batch is the same pipeline: work produced inside a Manus/Kimi-style agent
+sandbox (which keeps its own git history, ledger chain and hundreds of
+regenerated file versions) → downloaded to Notes/Files → re-exported as ever-
+bigger archives. Nothing in them is a copy of the Oddkin iOS work, and nothing
+contains credentials or personal data.
+
 ## Conclusion
 
 These are your own tooling artefacts: a set of agent skills, one Xcode project of
