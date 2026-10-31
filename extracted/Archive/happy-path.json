@@ -1,0 +1,160 @@
+{
+  "vector_id": "happy-path",
+  "spec_version": "0.4",
+  "section": "§15.1",
+  "description": "Normative happy path. CAPABILITY_GRANT of flag 0x00000001 to an ACTIVE agent by a valid two-hop authority chain. Expected outcome: TransitionVerified.",
+
+  "inputs": {
+
+    "pre_state": {
+      "_type": "AgentGenomeStateV2",
+      "schema_version": 1,
+      "agent_id":        "0xaaaa000000000000000000000000000000000000000000000000000000000001",
+      "genome_id":       "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "lineage_root":    "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "lifecycle_flags": "0x00000001",
+      "viability_flags": "0x00000000",
+      "capability_flags":"0x00000000",
+      "mutation_root":   "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "runtime_flags":   "0x0000000000000000",
+      "sequence":        0,
+      "payload_hash":    "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+
+    "payload_bytes_hex": "0x00000001",
+    "_payload_note": "abi.encode(uint32(0x00000001)) — grants capability flag bit 0",
+
+    "proposal": {
+      "_type": "MutationProposalV1",
+      "schema_version": 1,
+      "proposal_id": "COMPUTE",
+      "_proposal_id_note": "keccak256(abi.encode(schema_version, proposer_id, target_agent_id, mutation_type, payload_hash, semantic_version_required, codec_version_required, nonce, created_at, expires_at))",
+      "proposer_id":               "0xbbbb000000000000000000000000000000000000000000000000000000000002",
+      "target_agent_id":           "0xaaaa000000000000000000000000000000000000000000000000000000000001",
+      "mutation_type":             "0x00000003",
+      "_mutation_type_name":       "CAPABILITY_GRANT",
+      "payload_hash":              "COMPUTE",
+      "_payload_hash_note":        "keccak256(0x00000001)",
+      "semantic_version_required": 1,
+      "codec_version_required":    1,
+      "nonce":                     1,
+      "created_at":                1700000000,
+      "expires_at":                1800000000,
+      "proposer_signature":        "POPULATE_AT_GATE_3"
+    },
+
+    "authority_context": {
+      "_type": "AuthorityContextV1",
+      "schema_version": 1,
+      "context_id": "COMPUTE",
+      "_context_id_note": "keccak256(abi.encode(schema_version, governor_id, hash_authority_chain, policy_hash, hash_attestations, epoch, created_at))",
+      "governor_id": "0xcccc000000000000000000000000000000000000000000000000000000000003",
+      "authority_chain": [
+        {
+          "node_id":          "0xcccc000000000000000000000000000000000000000000000000000000000003",
+          "role":             "0x00000001",
+          "_role_name":       "ROOT_GOVERNOR",
+          "delegation_depth": 0,
+          "node_signature":   "POPULATE_AT_GATE_3"
+        },
+        {
+          "node_id":          "0xbbbb000000000000000000000000000000000000000000000000000000000002",
+          "role":             "0x00000004",
+          "_role_name":       "PROPOSER",
+          "delegation_depth": 1,
+          "node_signature":   "POPULATE_AT_GATE_3"
+        }
+      ],
+      "policy_hash": "COMPUTE",
+      "_policy_hash_note": "keccak256(policy_bytes_hex)",
+      "policy_bytes_hex": "POPULATE",
+      "_policy_note": "abi-encoded policy: allow CAPABILITY_GRANT of flag=0x00000001 to any agent with lifecycle_flags & ACTIVE != 0",
+      "attestations": [],
+      "_hash_attestations": "keccak256(abi.encode(uint256(0)))",
+      "_hash_attestations_note": "Empty list rule §1.4",
+      "epoch":      1,
+      "created_at": 1700000000
+    },
+
+    "transition": {
+      "_type": "StateTransitionV1",
+      "schema_version":          1,
+      "domain_separator":        "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "transition_id":           "COMPUTE",
+      "pre_state_hash":          "COMPUTE",
+      "post_state_hash":         "COMPUTE",
+      "mutation_hash":           "SAME_AS_proposal_id",
+      "authority_context_hash":  "SAME_AS_context_id",
+      "verdict_hash":            "COMPUTE",
+      "mutation_engine_hash":    "POPULATE_AT_GATE_6",
+      "semantic_version":        1,
+      "codec_version":           1,
+      "governor_id":             "0xcccc000000000000000000000000000000000000000000000000000000000003",
+      "governor_signature":      "POPULATE_AT_GATE_3",
+      "epoch":                   1,
+      "sequence":                1,
+      "created_at":              1700000100
+    }
+  },
+
+  "expected": {
+
+    "intermediate_hashes": {
+      "payload_hash":             "GATE_1",
+      "pre_state_hash":           "GATE_1",
+      "proposal_id":              "GATE_2",
+      "hash_authority_chain":     "GATE_2",
+      "hash_attestations":        "GATE_2",
+      "_hash_attestations_value": "keccak256(abi.encode(uint256(0)))",
+      "context_id":               "GATE_2",
+      "verdict_hash":             "GATE_2",
+      "transition_id":            "GATE_3"
+    },
+
+    "_gate_note": "All GATE_N values become concrete hex strings when that gate passes. No gate may be skipped.",
+
+    "verdict": {
+      "_type": "VerdictV1",
+      "schema_version":         1,
+      "outcome":                0,
+      "_outcome_name":          "Allow",
+      "reason_code":            0,
+      "_reason_code_name":      "None",
+      "flags":                  "0x00000000",
+      "authority_context_hash": "SAME_AS_context_id",
+      "mutation_hash":          "SAME_AS_proposal_id",
+      "created_at":             1700000100
+    },
+
+    "post_state": {
+      "_type": "AgentGenomeStateV2",
+      "schema_version":  1,
+      "agent_id":        "0xaaaa000000000000000000000000000000000000000000000000000000000001",
+      "genome_id":       "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "lineage_root":    "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "lifecycle_flags": "0x00000001",
+      "viability_flags": "0x00000000",
+      "capability_flags":"0x00000001",
+      "_capability_flags_note": "bit 0 set by CAPABILITY_GRANT",
+      "mutation_root":   "COMPUTE",
+      "_mutation_root_note": "mutation engine sets this to keccak256(proposal_id) or equivalent — engine-defined",
+      "runtime_flags":   "0x0000000000000000",
+      "sequence":        1,
+      "_sequence_note":  "incremented from 0 by mutation engine",
+      "payload_hash":    "SAME_AS_proposal.payload_hash"
+    },
+
+    "authority_review": {
+      "valid_at_execution":       true,
+      "valid_under_current_law":  true,
+      "decayed_reputation_score": 0,
+      "expired_attestation_flags":"0x00000000",
+      "review_required":          false
+    },
+
+    "court_outcome":      0,
+    "court_outcome_name": "TransitionVerified"
+  },
+
+  "parity_assertion": "All four implementations (rust, typescript, python, solidity) must produce identical concrete values for every intermediate_hash and court_outcome. Any divergence is a bug in one or more implementations, not a spec ambiguity."
+}
