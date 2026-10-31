@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EBF2675F08117D61D9DC463 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CE163A0B6BDC3F4D173C /* ThemeManager.swift */; };
+		6553B1BE76492C9E00A10B1A /* PeerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400872B6E905D8E3595631FA /* PeerDetailsView.swift */; };
+		6BC45141501DAA1BFAA65929 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11292A8C19CC933B86F9AEAA /* Models.swift */; };
+		7978A4C50596B15D0A844997 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EEA008816A7ACCA03D457B /* SplashScreen.swift */; };
+		9BA34EB0ED75ADC13641907F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB1F26A1C8E091BFE6605D /* SettingsView.swift */; };
+		9DF2781959AD09D26A889A23 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988126E60D75D25A4CC073C /* AppConstants.swift */; };
+		AD3D302C50B8CC7F4D05C5B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C9A7DA4BDD4C4D2067F54 /* ContentView.swift */; };
+		BCEAF1B98797D8851AE8C2CB /* SyncLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB84FF98C35660BC01C5620 /* SyncLogsView.swift */; };
+		C8ACEF51418CCCE24B6CF83D /* ManusOmniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012C77D895ED97D560FC5AEB /* ManusOmniApp.swift */; };
+		DACDF40312101A87432F5909 /* Pods_ManusOmniAINetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CDDE545EBC38E940A3A368 /* Pods_ManusOmniAINetwork.framework */; };
+		E18EF849B93AE589884DF462 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55082145E56F63D7C4FE74D3 /* AppLogger.swift */; };
+		ECCBF16250E4D1AEFBDF103F /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC867B08E9AB40502E705116 /* MainDashboardView.swift */; };
+		F14E6E8148CF51305DE7AE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C19E49CA0A4889F939E7370 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012C77D895ED97D560FC5AEB /* ManusOmniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManusOmniApp.swift; sourceTree = "<group>"; };
+		0BB84FF98C35660BC01C5620 /* SyncLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncLogsView.swift; sourceTree = "<group>"; };
+		11292A8C19CC933B86F9AEAA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		19EEA008816A7ACCA03D457B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		299AE53B2DB2B5EAE97E7FD7 /* Pods-ManusOmniAINetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManusOmniAINetwork.debug.xcconfig"; path = "Target Support Files/Pods-ManusOmniAINetwork/Pods-ManusOmniAINetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		400872B6E905D8E3595631FA /* PeerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerDetailsView.swift; sourceTree = "<group>"; };
+		4988126E60D75D25A4CC073C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		55082145E56F63D7C4FE74D3 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		5C19E49CA0A4889F939E7370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71DB1F26A1C8E091BFE6605D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8F2187E1AEA0BEEDE3DB477F /* ManusOmniAINetwork.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ManusOmniAINetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B3505C02C132F8D5BD2A2E /* Pods-ManusOmniAINetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManusOmniAINetwork.release.xcconfig"; path = "Target Support Files/Pods-ManusOmniAINetwork/Pods-ManusOmniAINetwork.release.xcconfig"; sourceTree = "<group>"; };
+		A7B5BADF0652694FE31FA71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A8A7CE163A0B6BDC3F4D173C /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		AC867B08E9AB40502E705116 /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
+		B14C9A7DA4BDD4C4D2067F54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E71E1A766694C605A1500D56 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E9CDDE545EBC38E940A3A368 /* Pods_ManusOmniAINetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManusOmniAINetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA86D24CA9148B73AA65063C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACDF40312101A87432F5909 /* Pods_ManusOmniAINetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F50B2BC3B7314BE0EAA193 = {
+			isa = PBXGroup;
+			children = (
+				5C19E49CA0A4889F939E7370 /* Assets.xcassets */,
+				4D18D233F6EE6BD612C7D1D1 /* Resources */,
+				1DC9C7B5EAFAD4E4B0333A70 /* Sources */,
+				59B8BCBC0DCDE47E9FFDA722 /* Products */,
+				294E717E5A4EF7E1A7A90DB8 /* Pods */,
+				869AD5E64B268E4FF237CE6B /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		1DC9C7B5EAFAD4E4B0333A70 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4988126E60D75D25A4CC073C /* AppConstants.swift */,
+				55082145E56F63D7C4FE74D3 /* AppLogger.swift */,
+				B14C9A7DA4BDD4C4D2067F54 /* ContentView.swift */,
+				A7B5BADF0652694FE31FA71C /* Info.plist */,
+				AC867B08E9AB40502E705116 /* MainDashboardView.swift */,
+				012C77D895ED97D560FC5AEB /* ManusOmniApp.swift */,
+				11292A8C19CC933B86F9AEAA /* Models.swift */,
+				400872B6E905D8E3595631FA /* PeerDetailsView.swift */,
+				71DB1F26A1C8E091BFE6605D /* SettingsView.swift */,
+				19EEA008816A7ACCA03D457B /* SplashScreen.swift */,
+				0BB84FF98C35660BC01C5620 /* SyncLogsView.swift */,
+				A8A7CE163A0B6BDC3F4D173C /* ThemeManager.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		294E717E5A4EF7E1A7A90DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				299AE53B2DB2B5EAE97E7FD7 /* Pods-ManusOmniAINetwork.debug.xcconfig */,
+				90B3505C02C132F8D5BD2A2E /* Pods-ManusOmniAINetwork.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D18D233F6EE6BD612C7D1D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E71E1A766694C605A1500D56 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59B8BCBC0DCDE47E9FFDA722 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F2187E1AEA0BEEDE3DB477F /* ManusOmniAINetwork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		869AD5E64B268E4FF237CE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9CDDE545EBC38E940A3A368 /* Pods_ManusOmniAINetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73F86ED16E20CE9DFCFD94F0 /* ManusOmniAINetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6146BEC169B62CBC75976B8 /* Build configuration list for PBXNativeTarget "ManusOmniAINetwork" */;
+			buildPhases = (
+				F7CD97826CA0C43DD07FF7CF /* [CP] Check Pods Manifest.lock */,
+				C733E7618C4281A790C9AA02 /* Sources */,
+				B169CB5D7462F22CCA5C5FF2 /* Resources */,
+				CA86D24CA9148B73AA65063C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManusOmniAINetwork;
+			productName = ManusOmniAINetwork;
+			productReference = 8F2187E1AEA0BEEDE3DB477F /* ManusOmniAINetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E38C492F1E79B0B5C0A960F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 7EF0E3591FA1C1AF7EDE0A2F /* Build configuration list for PBXProject "ManusOmniAINetwork" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 07F50B2BC3B7314BE0EAA193;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			productRefGroup = 59B8BCBC0DCDE47E9FFDA722 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73F86ED16E20CE9DFCFD94F0 /* ManusOmniAINetwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B169CB5D7462F22CCA5C5FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14E6E8148CF51305DE7AE1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7CD97826CA0C43DD07FF7CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ManusOmniAINetwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C733E7618C4281A790C9AA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF2781959AD09D26A889A23 /* AppConstants.swift in Sources */,
+				E18EF849B93AE589884DF462 /* AppLogger.swift in Sources */,
+				AD3D302C50B8CC7F4D05C5B5 /* ContentView.swift in Sources */,
+				ECCBF16250E4D1AEFBDF103F /* MainDashboardView.swift in Sources */,
+				C8ACEF51418CCCE24B6CF83D /* ManusOmniApp.swift in Sources */,
+				6BC45141501DAA1BFAA65929 /* Models.swift in Sources */,
+				6553B1BE76492C9E00A10B1A /* PeerDetailsView.swift in Sources */,
+				9BA34EB0ED75ADC13641907F /* SettingsView.swift in Sources */,
+				7978A4C50596B15D0A844997 /* SplashScreen.swift in Sources */,
+				BCEAF1B98797D8851AE8C2CB /* SyncLogsView.swift in Sources */,
+				1EBF2675F08117D61D9DC463 /* ThemeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14F58C61C7A0764032E1661C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		39B0430250EFA1B60F3B2BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299AE53B2DB2B5EAE97E7FD7 /* Pods-ManusOmniAINetwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				BUNDLE_DISPLAY_NAME = "Manus Omni AI Network";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				EXECUTABLE_NAME = "$(PRODUCT_NAME)";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_KEY_PrivacyManifestPath = Resources/PrivacyInfo.xcprivacy;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawnasher.manusomniainetwork;
+				PRODUCT_NAME = ManusOmniAINetwork;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE9842F63F8EC0990FD5BD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B3505C02C132F8D5BD2A2E /* Pods-ManusOmniAINetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				BUNDLE_DISPLAY_NAME = "Manus Omni AI Network";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				EXECUTABLE_NAME = "$(PRODUCT_NAME)";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_KEY_PrivacyManifestPath = Resources/PrivacyInfo.xcprivacy;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawnasher.manusomniainetwork;
+				PRODUCT_NAME = ManusOmniAINetwork;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B426CCF42A786EE4AAA1AB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EF0E3591FA1C1AF7EDE0A2F /* Build configuration list for PBXProject "ManusOmniAINetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F58C61C7A0764032E1661C /* Debug */,
+				B426CCF42A786EE4AAA1AB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B6146BEC169B62CBC75976B8 /* Build configuration list for PBXNativeTarget "ManusOmniAINetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B0430250EFA1B60F3B2BBE /* Debug */,
+				ACE9842F63F8EC0990FD5BD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E38C492F1E79B0B5C0A960F /* Project object */;
+}

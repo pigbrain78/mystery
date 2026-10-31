@@ -1,0 +1,26 @@
+Build failed time 19-04-2026 10:07 PM IST : Update app error
+Traceback (most recent call last):
+  File "/Users/ec2-user/iOSBuilderApp/builderiOSAgent/agents/update_app_by_user.py", line 345, in get_updated_code_after_error_fix
+    cleaned_json = json.loads(result_text)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Invalid \escape: line 6 column 444 (char 26318)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ec2-user/iOSBuilderApp/builderiOSAgent/iosappscripts/modify_app.py", line 344, in update_app_source
+    ios_code = get_updated_code_after_error_fix(code_json, update_instructions, message_id, app_id,
+                                                feedback_images, updated_res=updated_res)
+  File "/Users/ec2-user/iOSBuilderApp/builderiOSAgent/agents/update_app_by_user.py", line 365, in get_updated_code_after_error_fix
+    raise LLMAPIError(error_msg)
+utils.commons.LLMAPIError: Failed to parse Claude response as JSON: Invalid \escape: line 6 column 444 (char 26318)
+
+==================================================
